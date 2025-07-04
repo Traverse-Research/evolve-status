@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: "*/10 * * * *"
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   health_check_job:
     runs-on: ubuntu-latest
